@@ -22,7 +22,7 @@ public class TxtReader {
 
     public void exportfileToCSV () throws IOException{
         String []studentList = readingTxtFile();
-        File file = new File("src/resources/studens.csv");
+        File file = new File("src/resources/students.csv");
         FileWriter fileWconverter = new FileWriter(file);
 
         for (String student : studentList){
