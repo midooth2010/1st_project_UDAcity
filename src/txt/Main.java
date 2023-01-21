@@ -1,9 +1,6 @@
 package txt;
-//import backup.XmlReader;
 
-//import backup.XMLreader3;
 
-import javax.sql.rowset.spi.XmlReader;
 import java.io.IOException;
 
 import static txt.XMLReader2.*;
