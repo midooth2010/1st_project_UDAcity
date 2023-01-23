@@ -20,7 +20,7 @@ public class TxtReader {
 
     }
 
-    public void exportfileToCSV () throws IOException{
+    public String[] exportfileToCSV () throws IOException{
         String []studentList = readingTxtFile();
         File file = new File("src/resources/students.csv");
         FileWriter fileWconverter = new FileWriter(file);
@@ -34,12 +34,10 @@ public class TxtReader {
         fileWconverter.close();
 
 
-
-
-
-}
+        return studentList;
+    }
     public void printStudentData () throws IOException {
-        String[] studentList = readingTxtFile();
+        String[] studentList = exportfileToCSV();
 
         System.out.println("------------------------");
         System.out.println("Current Student List");
