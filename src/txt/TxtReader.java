@@ -39,6 +39,7 @@ public class TxtReader {
     public void printStudentData () throws IOException {
         String[] studentList = exportfileToCSV();
 
+
         System.out.println("------------------------");
         System.out.println("Current Student List");
         System.out.println("------------------------");
