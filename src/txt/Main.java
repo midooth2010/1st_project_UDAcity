@@ -9,8 +9,9 @@ public class Main {
     public static void main(String[] args) throws IOException {
       TxtReader textReader = new TxtReader();
        textReader.exportfileToCSV();
-        XMLReader2 xmlReader = new XMLReader2();
-        exportXmlToCSV();
+       textReader.printStudentData();
+      //  XMLReader2 xmlReader = new XMLReader2();
+       // exportXmlToCSV();
 
 
 

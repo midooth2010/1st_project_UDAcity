@@ -13,7 +13,7 @@ public class TxtReader {
             student = student.replace("#",",");
             student = student.replace("$","\n");
             studentList = student.split("\n");
-            System.out.println(student);
+            //System.out.println(student);
         }
         return studentList;
 
@@ -34,9 +34,25 @@ public class TxtReader {
         fileWconverter.close();
 
 
-    }
-
 
 
 
 }
+    public void printStudentData () throws IOException {
+        String[] studentList = readingTxtFile();
+
+        System.out.println("------------------------");
+        System.out.println("Current Student List");
+        System.out.println("------------------------");
+        //System.out.println(" ID   Name          Grade        Email              Address            region        Country");
+
+
+    for (String student : studentList){
+        String [] studentData = student.split(",");
+        System.out.printf("%-4s %-20s %-10s %-30s %-40s %-10s %-20s-%n",studentData[0],
+                studentData[1], studentData[2], studentData[3], studentData[4],
+                studentData[5], studentData[6]);
+    }
+    }
+}
+
