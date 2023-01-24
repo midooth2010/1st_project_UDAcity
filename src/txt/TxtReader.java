@@ -13,7 +13,7 @@ public class TxtReader {
             student = student.replace("#",",");
             student = student.replace("$","\n");
             studentList = student.split("\n");
-            //System.out.println(student);
+            System.out.println(student);
         }
         return studentList;
 

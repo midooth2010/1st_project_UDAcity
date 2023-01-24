@@ -4,14 +4,15 @@ package txt;
 import java.io.IOException;
 
 import static txt.XMLReader2.*;
+import txt.TxtReader;
 
 public class Main {
     public static void main(String[] args) throws IOException {
       TxtReader textReader = new TxtReader();
        textReader.exportfileToCSV();
        textReader.printStudentData();
-      //  XMLReader2 xmlReader = new XMLReader2();
-       // exportXmlToCSV();
+      XMLReader2 xmlReader = new XMLReader2();
+      exportXmlToCSV();
 
 
 
