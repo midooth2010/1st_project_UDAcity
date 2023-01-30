@@ -20,9 +20,9 @@ public class JsonReader222 {
 
         JSONObject json_data = (JSONObject) obj;
         for (Object o : json_data.keySet()) {
-           // System.out.println(o);
+            System.out.println(o);
         if(o.equals(number)) {
-        //System.out.println(json_data.get(o));
+        System.out.println(json_data.get(o));
         return json_data.get(o).toString();
         }
     }

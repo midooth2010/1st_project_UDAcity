@@ -23,7 +23,7 @@ public class Main {
         String number = myObj.nextLine(); // Read user input
         //System.out.println("number is: " + number); // Output user input
 
-        //JsonReader222.readFromJsonFile(number);
+        ////JsonReader222.readFromJsonFile(number);
         JsonReader222.fromCsvFile(number);
 
     }
